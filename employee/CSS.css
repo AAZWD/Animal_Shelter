@@ -1,0 +1,371 @@
+body{
+    text-align: center;
+    font-family: calibri;
+    margin: 0;
+}
+
+nav{
+    text-decoration: none;
+    background-color: #113163;
+    color: white;
+}
+
+a:active{
+    background-color: black;
+}
+
+nav a{
+    color: white;
+    text-shadow: 2px 2px #000000;
+    text-decoration: none;
+    font-size: 25px;
+    transition: .5s;
+}
+
+nav a:hover{
+    color: #D6D7DA;
+    text-shadow: 2px 2px #113163;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    padding: 20px;
+}
+
+#create{
+    padding: 20px;
+    background-image:url(Images/Dog_Background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 320px;
+    margin-top: -17px;
+    width: 100%;
+}
+
+.click{
+    display: inline-block;
+    background-color: #000e3a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 12px;
+    transition: all .5s;
+    margin: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.click:hover{
+    opacity: 0%;
+}
+
+.click span{
+    cursor: pointer;
+    position: relative;
+    transition: .5s;
+    display: inline-block;
+}
+
+.click span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: .5s;
+}
+
+.click:hover span{
+    padding-right: 20px;
+}
+
+.click:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#locate_text{
+    color: white;
+    text-shadow: 1px 1px black;
+    margin-top: -30px;
+}
+
+#locate_text span{
+    color: red;
+}
+
+#title{
+    padding-top: 30px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+footer{
+    background-color: #113163;
+    padding: 10px;
+}
+
+footer p{
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+footer a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    text-shadow: 2px 2px black;
+    transition: .5s;
+}
+
+footer a:hover{
+    color: #113163;
+    text-shadow: 2px 2px #113163;
+}
+
+#hours{
+    background-color: skyblue;
+    color: black;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    border: 1px dashed grey;
+}
+
+#about{
+    width: 100%;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    background-color: skyblue;
+}
+
+#about a{
+    text-decoration: none;
+    color: darkblue;
+    transition: 1s;
+}
+
+#about a:hover{
+    color: skyblue;
+}
+
+#about img{
+    border: 1px solid black;
+}
+
+hr{
+    border-top: grey;
+}
+/*Modal*/
+.inputBox {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+button {
+    background-color: #113163;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 15%;
+    border-radius: 10px;    
+}
+button:hover {
+    opacity: 0.8;
+}
+.container {
+    padding: 16px;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.47);
+    padding-top: 60px;
+}
+.modalContent {
+    background-color: #F1F1F1;
+    margin: 5px auto; 
+    border: 1px solid #888;
+    width: 50%; 
+    animation: animatezoom 0.5s    
+}
+.close, .close:hover {
+    position: absolute;
+    right: 25px;
+    top: 0; 
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+/*End of Modal*/
+.input {
+    width: 30%; 
+    padding: 10px; 
+    border: 2px solid #888;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+}
+/*Success Stories*/
+.name{
+    font-weight: bold;
+    color: #0F284E;
+    font-size: 1.5em;
+}
+.story{
+    text-align: center;
+    margin: 0 20% 0 0;    
+}
+/*Animal profiles*/
+.adoptable{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Search bar*/
+.form{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 95%;
+    margin-bottom: 3%;
+}
+.form .searchOption{
+    margin-left: 2%;
+}
+.submit{
+    width: 15%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#animalTable{
+    border: 1px solid black;
+}
+#animalTable tr:nth-child(n+5){ 
+    display: none 
+}
+#animalTable td img{
+    width: 240px;
+    height: 170px;
+}
+#animalTable tr:nth-child(odd){
+    background-color: rgba(17, 51, 99, 0.03);
+}
+.med{
+    display: none;
+}
+/*Edit Animals*/
+.editAnimal .input {
+    width: 15%; 
+    padding: 5px; 
+    border: 2px solid #888;
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-top: 5px; 
+    margin-bottom: 15px; 
+}
+.editAnimal{
+    display: none;
+}
+.animalClick:nth-of-type(even){
+    background-color: rgba(17, 51, 99, 0.14);
+    color: #000e3a;
+}
+.submitButtonMini{
+    width: 8%;
+}
+.hideID{
+    display: none;
+}
+/*Staff*/
+.staff{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.EmpDetails{
+    display: flex;
+    flex-direction: column;
+}
+#vetTable, #employeeTable{
+    font-size: 1.2em;
+}
+.empTitle, .vetTitle{
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 1.5em;
+    width: 100%;
+}
+.allVetsTitle{
+    font-weight: bold;
+    color: #0F284E;
+    font-size: 1.5em;
+}
+.empDisplay{
+    display: none;
+}
+.vetDisplay{
+    display: none;
+}
+.allVets{
+    background-color: rgba(0, 14, 58, 0.02);  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: flex-start;
+    align-items: center;
+    height: 350px;
+    border-radius: 10px;
+}
+
+.eachVet{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+/*Edit Applications*/
+.editApp{
+    display: none; 
+}
+
+.accept, .reject{
+    width: 6%;
+}
+.accept{
+    margin-right: 5px;
+    background-color: #84A884;
+}
+.reject{
+    margin-left: 5px;
+    background-color: #9C7E7E;
+}
+.arApp{
+    display: inline;
+}
