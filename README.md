@@ -3,9 +3,6 @@
 ## Purpose
 A functional animal adoption site. Created to practice building relational databases with MySQL on phpMyAdmin.
 
-## Users
-public
-
 ## Technologies
 JS  
 PHP
