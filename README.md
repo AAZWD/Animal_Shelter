@@ -1,14 +1,15 @@
 # Relational Database Project
 
 ## Purpose
-Functional animal adoption site with a database built based on the relational database model
+A functional animal adoption site. Created to practice building relational databases with MySQL on phpMyAdmin.
 
 ## Users
 public
 
 ## Technologies
 JS  
-PHP  
+PHP
+SQL
 HTML  
 CSS  
 
