@@ -5,8 +5,8 @@ A functional animal adoption site. Created to practice building relational datab
 
 ## Technologies
 JS  
-PHP
-SQL
+PHP  
+SQL  
 HTML  
 CSS  
 
